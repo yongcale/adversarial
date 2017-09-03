@@ -34,3 +34,14 @@
 * https://blog.openai.com/adversarial-example-research/
 * https://blog.openai.com/robust-adversarial-inputs/
 
+---
+
+## Deep Reinforcement Learning
+* http://blog.csdn.net/songrotek/article/details/50580904 （Basic idea）
+* https://www.youtube.com/watch?v=iF8dRePlPUo&list=PLAwxTw4SYaPn_OWPFT9ulXLuQrImzHfOV (视频 还不错的)
+
+## TensorFlow
+* https://mp.weixin.qq.com/s/VlvQmrS7Qi2qq6fTBXKTYw
+* https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650717691&idx=2&sn=3f0b66aa9706aae1a30b01309aa0214c&scene=21#wechat_redirect (CNN)
+* https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650723520&idx=4&sn=8ee14dd052766ca3e0afa60dcbb65b2d&chksm=871b10beb06c99a81ef547319637a177142d33a40da5a85024fc6a3b623d60d3a7ac22e3efc3&scene=21#wechat_redirect (CNN)
+* https://mp.weixin.qq.com/s?__biz=MzA3MzI4MjgzMw==&mid=2650728746&idx=1&sn=61e9cb824501ec7c505eb464e8317915&chksm=871b2d54b06ca442bc049e97c97e117455fd31bd0fb0619be4592eebd0958c26e3c223bfbfe5&scene=21#wechat_redirect (CNN)
