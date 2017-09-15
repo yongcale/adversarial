@@ -13,6 +13,7 @@
 * [Tactics of Adversarial Attack on Deep Reinforcement Learning Agents](https://arxiv.org/abs/1703.06748)
 * [Detecting Adversarial Samples from Artifacts](https://arxiv.org/abs/1703.00410)
 * [Adversarial Example Defenses: Ensembles of Weak Defenses are not Strong](https://arxiv.org/abs/1706.04701)
+* [Generating Adversarial Examples for Speech Recognition](http://web.stanford.edu/class/cs224s/reports/Dan_Iter.pdf)
 ---
 
 ##  GAN:  (https://github.com/hindupuravinash/the-gan-zoo)
