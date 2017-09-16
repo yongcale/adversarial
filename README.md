@@ -4,7 +4,7 @@
 ### Reports Latex template - https://www.overleaf.com/10853570cqtykqmmnmtd
 ###
 ###
-###
+#### proposal - adversarial/reports/[CPA&Proposal.pdf](https://github.com/yongcale/adversarial/blob/master/reports/CPA%26Proposal.pdf)
 ###
 ###
 ###
