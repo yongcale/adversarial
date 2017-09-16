@@ -2,6 +2,7 @@
 # Reference List
 
 ## Adversarial Example/Training
+* [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572)
 * [Delving into Transferable Adversarial Examples and Black-box attacks](https://arxiv.org/abs/1611.02770)
 * [Delving into adversarial attacks on deep policies](https://arxiv.org/abs/1705.06452)
 * [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401)
