@@ -6,6 +6,7 @@
 * [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/)
 * [Practical black-box attacks against machine learning](https://arxiv.org/abs/1602.02697)
 * [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199)
+* [Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images](https://arxiv.org/abs/1412.1897)
 * [Delving into Transferable Adversarial Examples and Black-box attacks](https://arxiv.org/abs/1611.02770)
 * [Delving into adversarial attacks on deep policies](https://arxiv.org/abs/1705.06452)
 * [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401)
