@@ -13,7 +13,12 @@
 * [Adversarial Examples for Semantic Image Segmentation](https://arxiv.org/abs/1703.01101)
 * [Adversarial Examples for Semantic Segmentation and Object Detection](https://arxiv.org/pdf/1703.08603.pdf)
 * [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401)
+* [The Limitations of Deep Learning in Adversarial Settings](https://arxiv.org/abs/1511.07528)
+* [Deepfool: a simple and accurate method to fool deep neural networks](https://arxiv.org/abs/1511.04599)
 
+---
+
+* [Adversarial examples in the physical world.](https://arxiv.org/abs/1607.02533)
 * [Delving into adversarial attacks on deep policies](https://arxiv.org/abs/1705.06452)
 * [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918v1)
 * [Adversarial Attacks on Neural Network Policies](https://arxiv.org/abs/1702.02284)  (http://rll.berkeley.edu/adversarial/)
