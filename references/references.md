@@ -11,7 +11,6 @@
 * [Delving into adversarial attacks on deep policies](https://arxiv.org/abs/1705.06452)
 * [Synthesizing Robust Adversarial Examples](https://arxiv.org/abs/1707.07397)
 * [Adversarial Examples for Semantic Image Segmentation](https://arxiv.org/abs/1703.01101)
-* [Universal Adversarial Perturbations Against Semantic Image Segmentation](https://arxiv.org/abs/1704.05712)
 * [Adversarial Examples for Semantic Segmentation and Object Detection](https://arxiv.org/pdf/1703.08603.pdf)
 * [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401)
 * [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918v1)
