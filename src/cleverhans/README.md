@@ -9,6 +9,10 @@
 
 To run the sample attack with Fast Gradient Sign Method:
 
-python3 fgsm/attack_fgsm.py  --master="" --checkpoint_path="./inception_v3.ckpt" --input_dir="input"
-               --output_dir="output" --max_epsilon=10 --image_width=299 --image_height=299
-               --batch_size=16
+1) download related dataset:
+       sh /etc/download_data.sh
+
+2) then perform fgsm attack
+       python3 fgsm/attack_fgsm.py  --master="" --checkpoint_path="./inception_v3.ckpt"  \
+                                    --input_dir="input" --output_dir="output" --max_epsilon=10 \
+                                    --image_width=299 --image_height=299 --batch_size=16
