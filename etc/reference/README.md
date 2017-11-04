@@ -15,6 +15,7 @@
 * [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401)
 * [The Limitations of Deep Learning in Adversarial Settings](https://arxiv.org/abs/1511.07528)
 * [Deepfool: a simple and accurate method to fool deep neural networks](https://arxiv.org/abs/1511.04599)
+* [The Limitations of Deep Learning in Adversarial Settings](https://arxiv.org/abs/1511.07528)
 
 ---
 
