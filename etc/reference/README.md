@@ -7,13 +7,13 @@
 * [Standard implementation of attacks, for adversarial training and reproducible benchmarks](https://github.com/tensorflow/cleverhans) -- RL
 * [Practical black-box attacks against machine learning](https://arxiv.org/abs/1602.02697) -- RL
 * [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199) -- RL
-* [Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images](https://arxiv.org/abs/1412.1897) -- RL
 * [Delving into Transferable Adversarial Examples and Black-box attacks](https://arxiv.org/abs/1611.02770) -- RL
 * [Adversarial Examples for Semantic Image Segmentation](https://arxiv.org/abs/1703.01101) -- RL
-* [Adversarial Examples for Semantic Segmentation and Object Detection](https://arxiv.org/pdf/1703.08603.pdf) --YW
+* [Adversarial Examples for Semantic Segmentation and Object Detection](https://arxiv.org/pdf/1703.08603.pdf) --RL
 * [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401) --YW
 * [The Limitations of Deep Learning in Adversarial Settings](https://arxiv.org/abs/1511.07528) --YW
 * [Deepfool: a simple and accurate method to fool deep neural networks](https://arxiv.org/abs/1511.04599) --YW
+* [Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images](https://arxiv.org/abs/1412.1897) -- YW
 
 ---
 
