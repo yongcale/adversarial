@@ -4,7 +4,6 @@
 ## Adversarial Example/Training
 * [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572) -- RL
 * [Synthesizing Robust Adversarial Examples](https://arxiv.org/abs/1707.07397)-- RL
-* [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/) -- RL
 * [Standard implementation of attacks, for adversarial training and reproducible benchmarks](https://github.com/tensorflow/cleverhans) -- RL
 * [Practical black-box attacks against machine learning](https://arxiv.org/abs/1602.02697) -- RL
 * [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199) -- RL
@@ -27,7 +26,11 @@
 * [Tactics of Adversarial Attack on Deep Reinforcement Learning Agents](https://arxiv.org/abs/1703.06748)--ZQ
 * [Detecting Adversarial Samples from Artifacts](https://arxiv.org/abs/1703.00410)--ZQ
 * [Adversarial Example Defenses: Ensembles of Weak Defenses are not Strong](https://arxiv.org/abs/1706.04701)--ZQ
-* [Generating Adversarial Examples for Speech Recognition](http://web.stanford.edu/class/cs224s/reports/Dan_Iter.pdf)--ZQ
+---
+
+## Good Resources
+* [Generating Adversarial Examples for Speech Recognition](http://web.stanford.edu/class/cs224s/reports/Dan_Iter.pdf)
+* [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/) 
 ---
 
 ##  GAN:  (https://github.com/hindupuravinash/the-gan-zoo)
