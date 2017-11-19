@@ -2,32 +2,32 @@
 # Reference List
 
 ## Adversarial Example/Training
-* [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572)
-* [Synthesizing Robust Adversarial Examples](https://arxiv.org/abs/1707.07397)
-* [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/)
-* [Standard implementation of attacks, for adversarial training and reproducible benchmarks](https://github.com/tensorflow/cleverhans)
-* [Practical black-box attacks against machine learning](https://arxiv.org/abs/1602.02697)
-* [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199)
-* [Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images](https://arxiv.org/abs/1412.1897)
-* [Delving into Transferable Adversarial Examples and Black-box attacks](https://arxiv.org/abs/1611.02770)
-* [Adversarial Examples for Semantic Image Segmentation](https://arxiv.org/abs/1703.01101)
-* [Adversarial Examples for Semantic Segmentation and Object Detection](https://arxiv.org/pdf/1703.08603.pdf)
-* [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401)
-* [The Limitations of Deep Learning in Adversarial Settings](https://arxiv.org/abs/1511.07528)
-* [Deepfool: a simple and accurate method to fool deep neural networks](https://arxiv.org/abs/1511.04599)
+* [Explaining and Harnessing Adversarial Examples](https://arxiv.org/abs/1412.6572) -- RL
+* [Synthesizing Robust Adversarial Examples](https://arxiv.org/abs/1707.07397)-- RL
+* [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/) -- RL
+* [Standard implementation of attacks, for adversarial training and reproducible benchmarks](https://github.com/tensorflow/cleverhans) -- RL
+* [Practical black-box attacks against machine learning](https://arxiv.org/abs/1602.02697) -- RL
+* [Intriguing properties of neural networks](https://arxiv.org/abs/1312.6199) -- RL
+* [Deep Neural Networks are Easily Fooled: High Confidence Predictions for Unrecognizable Images](https://arxiv.org/abs/1412.1897) -- RL
+* [Delving into Transferable Adversarial Examples and Black-box attacks](https://arxiv.org/abs/1611.02770) -- RL
+* [Adversarial Examples for Semantic Image Segmentation](https://arxiv.org/abs/1703.01101) -- RL
+* [Adversarial Examples for Semantic Segmentation and Object Detection](https://arxiv.org/pdf/1703.08603.pdf) --YW
+* [Universal adversarial perturbations](https://arxiv.org/abs/1610.08401) --YW
+* [The Limitations of Deep Learning in Adversarial Settings](https://arxiv.org/abs/1511.07528) --YW
+* [Deepfool: a simple and accurate method to fool deep neural networks](https://arxiv.org/abs/1511.04599) --YW
 
 ---
 
-* [Adversarial examples in the physical world.](https://arxiv.org/abs/1607.02533)
-* [Delving into adversarial attacks on deep policies](https://arxiv.org/abs/1705.06452)
-* [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918v1)
-* [Adversarial Attacks on Neural Network Policies](https://arxiv.org/abs/1702.02284)  (http://rll.berkeley.edu/adversarial/)
-* [Ensemble Adversarial Training: Attacks and Defenses](https://arxiv.org/abs/1705.07204)
-* [SafetyNet: Detecting and Rejecting Adversarial Examples Robustly](https://arxiv.org/abs/1704.00103)
-* [Tactics of Adversarial Attack on Deep Reinforcement Learning Agents](https://arxiv.org/abs/1703.06748)
-* [Detecting Adversarial Samples from Artifacts](https://arxiv.org/abs/1703.00410)
-* [Adversarial Example Defenses: Ensembles of Weak Defenses are not Strong](https://arxiv.org/abs/1706.04701)
-* [Generating Adversarial Examples for Speech Recognition](http://web.stanford.edu/class/cs224s/reports/Dan_Iter.pdf)
+* [Adversarial examples in the physical world.](https://arxiv.org/abs/1607.02533) --YW
+* [Delving into adversarial attacks on deep policies](https://arxiv.org/abs/1705.06452) --YW
+* [Learning to Protect Communications with Adversarial Neural Cryptography](https://arxiv.org/abs/1610.06918v1) --YW
+* [Adversarial Attacks on Neural Network Policies](https://arxiv.org/abs/1702.02284)  (http://rll.berkeley.edu/adversarial/) --ZQ
+* [Ensemble Adversarial Training: Attacks and Defenses](https://arxiv.org/abs/1705.07204) --ZQ
+* [SafetyNet: Detecting and Rejecting Adversarial Examples Robustly](https://arxiv.org/abs/1704.00103) --ZQ
+* [Tactics of Adversarial Attack on Deep Reinforcement Learning Agents](https://arxiv.org/abs/1703.06748)--ZQ
+* [Detecting Adversarial Samples from Artifacts](https://arxiv.org/abs/1703.00410)--ZQ
+* [Adversarial Example Defenses: Ensembles of Weak Defenses are not Strong](https://arxiv.org/abs/1706.04701)--ZQ
+* [Generating Adversarial Examples for Speech Recognition](http://web.stanford.edu/class/cs224s/reports/Dan_Iter.pdf)--ZQ
 ---
 
 ##  GAN:  (https://github.com/hindupuravinash/the-gan-zoo)
