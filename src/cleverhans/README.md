@@ -9,9 +9,9 @@
 
 To run the sample attack with Fast Gradient Sign Method:
 
-1) download related dataset:
+1) download related dataset:  <br>
        sh $ROOT_DIR/etc/download_data.sh  <br>
-       Note: ROOT_DIR is the root directory of your github repository, for example, "/home/ywu118/adversarial/"
+       (Note: ROOT_DIR is the root directory of your github repository, for example, "/home/ywu118/adversarial/")
 
 2) then perform fgsm attack: <br>
        cd $ROOT_DIR/src/cleverhans/fgsm  <br>
