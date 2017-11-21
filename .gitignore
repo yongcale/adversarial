@@ -1,5 +1,5 @@
 tensorboard/
-dataset/images
+etc/dataset/images/
 etc/dataset/speech/
 src/cleverhans/__pycache__/
 src/__pycache__/
