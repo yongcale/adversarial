@@ -260,7 +260,7 @@ class FastGradientMethod(Attack):
         :param x: The model's symbolic inputs.
         :param eps: (optional float) attack step size (input variation)
         :param ord: (optional) Order of the norm (mimics NumPy).
-                    Possible values: np.inf, 1 or 2.
+                    Possible values: np.inf, -1, 1 or 2
         :param y: (optional) A tensor with the model labels. Only provide
                   this parameter if you'd like to use true labels when crafting
                   adversarial samples. Otherwise, model predictions are used as
@@ -297,7 +297,7 @@ class FastGradientMethod(Attack):
         Attack-specific parameters:
         :param eps: (optional float) attack step size (input variation)
         :param ord: (optional) Order of the norm (mimics NumPy).
-                    Possible values: np.inf, 1 or 2.
+                    Possible values: np.inf, -1, 1 or 2
         :param y: (optional) A tensor with the model labels. Only provide
                   this parameter if you'd like to use true labels when crafting
                   adversarial samples. Otherwise, model predictions are used as
@@ -322,8 +322,8 @@ class FastGradientMethod(Attack):
         if self.y is not None and self.y_target is not None:
             raise ValueError("Must not set both y and y_target")
         # Check if order of the norm is acceptable given current implementation
-        if self.ord not in [np.inf, int(1), int(2)]:
-            raise ValueError("Norm order must be either np.inf, 1, or 2.")
+        if self.ord not in [np.inf, int(1), int(2), int(-1)]:
+            raise ValueError("Norm order must be either np.inf, -1, 1, 2.")
         if self.back == 'th' and self.ord != np.inf:
             raise NotImplementedError("The only FastGradientMethod norm "
                                       "implemented for Theano is np.inf.")

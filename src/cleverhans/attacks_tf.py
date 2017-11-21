@@ -38,7 +38,7 @@ def fgm(x, preds, y=None, eps=0.3, ord=np.inf,
               Labels should be one-hot-encoded.
     :param eps: the epsilon (input variation parameter)
     :param ord: (optional) Order of the norm (mimics NumPy).
-                Possible values: np.inf, 1 or 2.
+                Possible values: np.inf, -1, 1, 2
     :param clip_min: Minimum float value for adversarial example components
     :param clip_max: Maximum float value for adversarial example components
     :param targeted: Is the attack targeted or untargeted? Untargeted, the
@@ -83,8 +83,13 @@ def fgm(x, preds, y=None, eps=0.3, ord=np.inf,
                                reduction_indices=red_ind,
                                keep_dims=True)
         normalized_grad = grad / tf.sqrt(square)
+    elif ord == -1:
+        # uniform noise from [0, 1)
+        noise = tf.random_uniform(tf.shape(grad))
+        normalized_grad = np.dot(tf.sign(grad), noise)
+
     else:
-        raise NotImplementedError("Only L-inf, L1 and L2 norms are "
+        raise NotImplementedError("Only L-inf, noise, L1 and L2 norms are "
                                   "currently implemented.")
 
     # Multiply by constant epsilon
