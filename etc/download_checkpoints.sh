@@ -7,7 +7,7 @@
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Download inception v3 checkpoint for fgsm attack.
-cd "${SCRIPT_DIR}/../src/cleverhans/fgsm/"
+cd "${SCRIPT_DIR}/../src/cleverhans/"
 wget http://download.tensorflow.org/models/inception_v3_2016_08_28.tar.gz
 wget http://download.tensorflow.org/models/resnet_v2_50_2017_04_14.tar.gz
 tar -xvzf inception_v3_2016_08_28.tar.gz
