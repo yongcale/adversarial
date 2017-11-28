@@ -33,6 +33,12 @@ tf.flags.DEFINE_string(
 tf.flags.DEFINE_string(
     'output_dir', '', 'Output directory with images.')
 
+tf.flags.DEFINE_integer(
+    'iterations', 10, 'how many iterations.')
+
+tf.flags.DEFINE_float(
+    'learning_rate', 8.0, 'learning rate of adversarial perturbation.')
+
 tf.flags.DEFINE_float(
     'max_epsilon', 16.0, 'Maximum size of adversarial perturbation.')
 
@@ -158,7 +164,15 @@ def main(_):
     #model = ResNetModel(num_classes)  TODO
 
     fgsm = FastGradientMethod(model)
+
+    # the ord with -1 means the gradient ascent with noise implementation
     x_adv = fgsm.generate(x_input, eps=eps, ord=-1, clip_min=-1., clip_max=1.)
+    for itr in range(FLAGS.iterations):
+        x_adv = fgsm.generate(x_adv + x_input, eps=FLAGS.learning_rate, ord=-1, clip_min=-1., clip_max=1.)
+
+
+    # default fast gradient sign method implementation
+    # x_adv = fgsm.generate(x_input, eps=eps, clip_min=-1., clip_max=1.)
 
     # Run computation
     saver = tf.train.Saver(slim.get_model_variables())

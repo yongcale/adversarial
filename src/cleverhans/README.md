@@ -15,4 +15,4 @@ To run the sample attack with Fast Gradient Sign Method:
 
 2) then perform fgsm attack: <br>
        cd $ROOT_DIR/src/cleverhans  <br>
-       python3 ./attacks/attack_fgsm_noise.py  --master="" --checkpoint_path="./inception_v3.ckpt" --input_dir="input" --output_dir="output" --max_epsilon=10 --image_width=299 --image_height=299 --batch_size=16
+       python3 ./attack/attack_fgsm_noise.py  --master="" --checkpoint_path="./inception_v3.ckpt" --input_dir="input" --output_dir="output" --max_epsilon=10 --image_width=299 --image_height=299 --batch_size=16
