@@ -151,6 +151,8 @@ def main(_):
   # Renormalizing epsilon from [0, 255] to [0, 2].
 
   eps = 2.0 * FLAGS.max_epsilon / 255.0
+  learning_rate = 2.0 * FLAGS.learning_rate / 255.0
+  iterations = FLAGS.iterations
   batch_shape = [FLAGS.batch_size, FLAGS.image_height, FLAGS.image_width, 3]
   num_classes = 1001
 
@@ -166,9 +168,9 @@ def main(_):
     fgsm = FastGradientMethod(model)
 
     # the ord with -1 means the gradient ascent with noise implementation
-    x_adv = fgsm.generate(x_input, eps=eps, ord=-1, clip_min=-1., clip_max=1.)
-    for itr in range(FLAGS.iterations):
-        x_adv = fgsm.generate(x_adv + x_input, eps=FLAGS.learning_rate, ord=-1, clip_min=-1., clip_max=1.)
+    x_adv = fgsm.generate(x_input, eps=learning_rate, ord=-1, clip_min=-1., clip_max=1.)
+    for itr in range(iterations):
+        x_adv = fgsm.generate(x_adv + x_input, eps=learning_rate, ord=-1, clip_min=-1., clip_max=1.)
 
 
     # default fast gradient sign method implementation
