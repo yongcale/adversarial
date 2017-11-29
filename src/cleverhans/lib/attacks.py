@@ -1,11 +1,12 @@
-from abc import ABCMeta
-import numpy as np
-from six.moves import xrange
-import warnings
 import collections
+import warnings
+from abc import ABCMeta
 
 import adversarial.src.cleverhans.utils as utils
-from adversarial.src.cleverhans.model import Model, CallableModelWrapper
+import numpy as np
+from six.moves import xrange
+
+from adversarial.src.cleverhans.lib.model import Model, CallableModelWrapper
 
 _logger = utils.create_logger("cleverhans.attacks")
 
@@ -277,7 +278,7 @@ class FastGradientMethod(Attack):
         assert self.parse_params(**kwargs)
 
         if self.back == 'tf':
-            from adversarial.src.cleverhans.attacks_tf import fgm
+            from adversarial.src.cleverhans.lib.attacks_tf import fgm
         else:
             from adversarial.src.cleverhans.attacks_th import fgm
 

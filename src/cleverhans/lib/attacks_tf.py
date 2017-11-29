@@ -6,12 +6,12 @@ from __future__ import unicode_literals
 import copy
 import warnings
 
+import adversarial.src.cleverhans.utils as utils
 import numpy as np
 import tensorflow as tf
 from six.moves import xrange
 
-import adversarial.src.cleverhans.utils as utils
-import adversarial.src.cleverhans.utils_tf as utils_tf
+import adversarial.src.cleverhans.lib.utils_tf as utils_tf
 
 _logger = utils.create_logger("cleverhans.attacks.tf")
 

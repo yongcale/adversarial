@@ -3,17 +3,18 @@ from __future__ import division
 from __future__ import print_function
 from __future__ import unicode_literals
 
-from distutils.version import LooseVersion
+import logging
 import math
-import numpy as np
 import os
-from six.moves import xrange
-import tensorflow as tf
 import time
 import warnings
-import logging
+from distutils.version import LooseVersion
 
-from adversarial.src.cleverhans.utils import batch_indices, _ArgsWrapper, create_logger, set_log_level
+import numpy as np
+import tensorflow as tf
+from six.moves import xrange
+
+from adversarial.src.cleverhans.lib.utils import batch_indices, _ArgsWrapper, create_logger, set_log_level
 
 _logger = create_logger("cleverhans.utils.tf")
 

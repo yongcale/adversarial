@@ -6,6 +6,7 @@ src/__pycache__/
 src/cleverhans/input/
 src/cleverhans/output/adv_images
 src/cleverhans/output/*.png
+src/cleverhans/output/*.csv
 src/cleverhans/attack/inception_v3*
 src/cleverhans/attack/resnet_v*
 src/cleverhans/defense/inception_v3*
