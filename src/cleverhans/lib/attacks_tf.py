@@ -6,7 +6,7 @@ from __future__ import unicode_literals
 import copy
 import warnings
 
-import adversarial.src.cleverhans.utils as utils
+import adversarial.src.cleverhans.lib.utils as utils
 import numpy as np
 import tensorflow as tf
 from six.moves import xrange
@@ -86,7 +86,7 @@ def fgm(x, preds, y=None, eps=0.3, ord=np.inf,
     elif ord == -1:
         # uniform noise from [0, 1)
         noise = tf.random_uniform(tf.shape(grad))
-        normalized_grad = np.dot(tf.sign(grad), noise)
+        normalized_grad = np.dot(grad, noise)
 
     else:
         raise NotImplementedError("Only L-inf, noise, L1 and L2 norms are "

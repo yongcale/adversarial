@@ -2,7 +2,7 @@ import collections
 import warnings
 from abc import ABCMeta
 
-import adversarial.src.cleverhans.utils as utils
+import adversarial.src.cleverhans.lib.utils as utils
 import numpy as np
 from six.moves import xrange
 

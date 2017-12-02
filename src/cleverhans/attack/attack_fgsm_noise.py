@@ -6,15 +6,14 @@ from __future__ import print_function
 
 import os
 
-from adversarial.src.cleverhans.attacks import FastGradientMethod
 import numpy as np
-from PIL import Image
-
 import tensorflow as tf
+from PIL import Image
 from tensorflow.contrib.slim.nets import inception
 from tensorflow.contrib.slim.nets import resnet_v2
-
 from tensorflow.contrib.slim.python.slim.nets import resnet_utils
+
+from adversarial.src.cleverhans.lib.attacks import FastGradientMethod
 
 resnet_arg_scope = resnet_utils.resnet_arg_scope
 
@@ -161,7 +160,7 @@ def main(_):
   with tf.Graph().as_default():
     # Prepare graph
     x_input = tf.placeholder(tf.float32, shape=batch_shape)
-
+    # Placeholder = Placeholder[dtype=DT_FLOAT, shape=[1,299,299,3]
     model = InceptionModel(num_classes)
     #model = ResNetModel(num_classes)  TODO
 
@@ -169,12 +168,6 @@ def main(_):
 
     # the ord with -1 means the gradient ascent with noise implementation
     x_adv = fgsm.generate(x_input, eps=learning_rate, ord=-1, clip_min=-1., clip_max=1.)
-    for itr in range(iterations):
-        x_adv = fgsm.generate(x_adv + x_input, eps=learning_rate, ord=-1, clip_min=-1., clip_max=1.)
-
-
-    # default fast gradient sign method implementation
-    # x_adv = fgsm.generate(x_input, eps=eps, clip_min=-1., clip_max=1.)
 
     # Run computation
     saver = tf.train.Saver(slim.get_model_variables())
@@ -183,10 +176,48 @@ def main(_):
         checkpoint_filename_with_path=FLAGS.checkpoint_path,
         master=FLAGS.master)
 
-    with tf.train.MonitoredSession(session_creator=session_creator) as sess:
-      for filenames, images in load_images(FLAGS.input_dir, batch_shape):
-        adv_images = sess.run(x_adv, feed_dict={x_input: images})
-        save_images(adv_images, filenames, FLAGS.output_dir)
+    with slim.arg_scope(inception.inception_v3_arg_scope()):
+      _, end_points = inception.inception_v3(
+          x_input, num_classes=num_classes, is_training=False)
+    predicted_labels = tf.argmax(end_points['Predictions'], 1)
+
+    dict = {}
+    label = -1
+    # figure out the labels predicted by the target model
+    # update the initial images and output for iteration
+
+    for filenames, images in load_images(FLAGS.input_dir, batch_shape):
+        print("to be processed image is {}".format(filenames[0]))
+        x_adv = fgsm.generate(x_input, eps=learning_rate, ord=-1, clip_min=-1., clip_max=1.)
+        with tf.train.MonitoredSession(session_creator=session_creator) as sess:
+            label = sess.run(predicted_labels, feed_dict={x_input: images})
+            adv_images = sess.run(x_adv, feed_dict={x_input: images})
+            save_images(adv_images, filenames, FLAGS.output_dir)
+        dict[filenames[0]] = label[0]
+    print(dict)
+
+    # iteratively, greedy perturb images
+    image_set = set()
+    print("Note, iterative version does not support batch")
+    for itr in range(iterations):
+        print("-----  iteration {}  -----".format(itr+1))
+        counter = 1
+        for filenames, images in load_images(FLAGS.output_dir, batch_shape):
+            print("the {}th image in iteration {}".format(counter, itr+1))
+            counter += 1
+            if filenames[0] in image_set:
+                continue
+            with tf.train.MonitoredSession(session_creator=session_creator) as sess:
+                label = sess.run(predicted_labels, feed_dict={x_input: images})
+            if dict.get(filenames[0]) != None and dict.get(filenames[0]) != label[0]:
+                image_set.add(filenames[0])
+                print("image {} has been changed to {}".format(filenames[0], label[0]))
+                continue
+            x_adv = fgsm.generate(x_input, eps=learning_rate * (itr + 1), ord=-1, clip_min=-1., clip_max=1.)
+            with tf.train.MonitoredSession(session_creator=session_creator) as sess:
+                adv_images = sess.run(x_adv, feed_dict={x_input: images})
+                save_images(adv_images, filenames, FLAGS.output_dir)
+    print(image_set)
 
 
 if __name__ == '__main__':
