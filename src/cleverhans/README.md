@@ -1,13 +1,11 @@
 
-## Fast Gradient Sign Method:
-
 ### Note: codes under adversarial/src/cleverhans are from the following sources,
 ###       more details please directly access them
 
 - https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks.py
 - https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks_tf.py
 
-To run the sample attack with Fast Gradient Sign Method:
+To run the attack:
 
 1) download related dataset:  <br>
        sh $ROOT_DIR/etc/download_data.sh  <br>
