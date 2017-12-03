@@ -1,4 +1,11 @@
-"""Implementation of sample attack."""
+"""Implementation of gradient asceent with noise attack.
+
+  reference: Nicolas Papernot, Nicholas Carlini, Ian Goodfellow, Reuben Feinman, Fartash Faghri, 
+             Alexander Matyasko, Karen Hambardzumyan, Yi-Lin Juang, Alexey Kurakin, Ryan Sheatsley, 
+             Abhibhav Garg, Yen-Chen Lin. ``cleverhans v2.0.0: an adversarial machine learning library'', 
+             arXiv preprint arXiv:1610.00768, 2007
+ 
+"""
 
 from __future__ import absolute_import
 from __future__ import division
