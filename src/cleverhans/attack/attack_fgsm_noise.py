@@ -194,13 +194,15 @@ def main(_):
             adv_images = sess.run(x_adv, feed_dict={x_input: images})
             save_images(adv_images, filenames, FLAGS.output_dir)
         dict[filenames[0]] = label[0]
+        if len(dict) == 50:
+            break
     print(dict)
 
     # iteratively, greedy perturb images
     image_set = set()
     print("Note, iterative version does not support batch")
     for itr in range(iterations):
-        print("-----  iteration {}  -----".format(itr+1))
+        print("-----  the {}th iteration  -----".format(itr+1))
         counter = 1
         for filenames, images in load_images(FLAGS.output_dir, batch_shape):
             print("the {}th image in iteration {}".format(counter, itr+1))
@@ -211,13 +213,17 @@ def main(_):
                 label = sess.run(predicted_labels, feed_dict={x_input: images})
             if dict.get(filenames[0]) != None and dict.get(filenames[0]) != label[0]:
                 image_set.add(filenames[0])
-                print("image {} has been changed to {}".format(filenames[0], label[0]))
+                print("    image {} has been changed to {}".format(filenames[0], label[0]))
+                continue
+            print("    image {} still has the same label {}".format(filenames[0], label[0]))
+            if (itr + 1) == iterations:
                 continue
             x_adv = fgsm.generate(x_input, eps=learning_rate * (itr + 1), ord=-1, clip_min=-1., clip_max=1.)
             with tf.train.MonitoredSession(session_creator=session_creator) as sess:
                 adv_images = sess.run(x_adv, feed_dict={x_input: images})
                 save_images(adv_images, filenames, FLAGS.output_dir)
-    print(image_set)
+        print('  the {}th iteration performance: {} / {}'.format(itr+1, len(image_set), len(dict)))
+    print('{} / {} images have been perturbed successfully'.format(len(image_set), len(dict)))
 
 
 if __name__ == '__main__':
