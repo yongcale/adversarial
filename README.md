@@ -65,9 +65,9 @@ python3 perturb_ratio.py
 
 *proposal - adversarial/etc/reports/[proposal.pdf](https://github.com/yongcale/adversarial/blob/master/etc/report/proposal.pdf)<br>
 CPA - adversarial/etc/reports/[CPA.pdf](https://github.com/yongcale/adversarial/blob/master/etc/report/Capstone%20%20CPA.pdf) <br>
-mid-project [update](https://docs.google.com/document/d/1TQSCHRkNbKEyEXy47DUizdd5kNxNmqapIAxt5I4Ckf0/edit)<br>
-[progress presentation PPT](https://docs.google.com/document/d/1TQSCHRkNbKEyEXy47DUizdd5kNxNmqapIAxt5I4Ckf0/edit?usp=sharing)<br>
-Final Reports [Latex version](https://www.overleaf.com/10853570cqtykqmmnmtd) [report.pdf](https://github.com/yongcale/adversarial/blob/master/etc/report/capstone-adversarial.pdf) <br>
+mid-project [update PPT](https://docs.google.com/document/d/1TQSCHRkNbKEyEXy47DUizdd5kNxNmqapIAxt5I4Ckf0/edit)<br>
+progress presentation [PPT](https://docs.google.com/document/d/1TQSCHRkNbKEyEXy47DUizdd5kNxNmqapIAxt5I4Ckf0/edit?usp=sharing)<br>
+Final Reports [Latex version](https://www.overleaf.com/10853570cqtykqmmnmtd) -  [report.pdf](https://github.com/yongcale/adversarial/blob/master/etc/report/capstone-adversarial.pdf) <br>
 Final presentation [PPT](https://docs.google.com/presentation/d/10aPZfIskeboQ367dO0CCDr6wGIdnv3mY8C0ZBPir_Xs/edit)*
 
 
