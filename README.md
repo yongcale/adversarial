@@ -2,10 +2,10 @@
 
 ```
 JHU graduate capstone project in Fall 2017
- Created by Ran Liu, Zheng Qu, Yong Wu
+Created by Ran Liu, Zheng Qu, Yong Wu
 ```
 
-### We would like to restate that we utilized several utils, gradient computation, class architecture from [cleverhans](https://github.com/tensorflow/cleverhans) community, we really appreciate the great contribution of the community
+### Statement: we would like to restate that we utilized several utils, gradient computation, class architecture from [cleverhans](https://github.com/tensorflow/cleverhans) community, we really appreciate the great contribution of the community
 
 ## 1. Get Started
 
@@ -24,7 +24,7 @@ tensorflow: >= 1.0.1
 ## 2. Dataset Preparation
 
 ```
-sh $ROOT_DIR/etc/download_data.sh  <br>
+sh $ROOT_DIR/etc/download_data.sh
        
 ```
 (Note: ROOT_DIR is the root directory of your repository, for example, "/home/ywu118/adversarial/"), script sh download_data.sh is used to help download relevant dataset, including images, and tensorflow pretrained models like resnet, ineception-v3
@@ -61,10 +61,14 @@ Note: Perturbation here means ratio of the sum of perturbation to the sum of ori
 
 
 
-### Appendix
+### 4. Appendix
+- **1). Examples We generated** 
+
+<img src="https://github.com/yongcale/adversarial/blob/master/etc/dataset/d6eac6858474111c(ini-323-).png" width="200">         **+**         <img src="https://github.com/yongcale/adversarial/blob/master/etc/dataset/perturb_d6eac6858474111c.png" width="200">         **=**         <img src="https://github.com/yongcale/adversarial/blob/master/etc/dataset/d6eac6858474111c(adv-327).png" width="200">
+
+
 
 #### the following info are several docs we generated, please skip them
-
 *proposal - adversarial/etc/reports/[proposal.pdf](https://github.com/yongcale/adversarial/blob/master/etc/report/proposal.pdf)<br>
 CPA - adversarial/etc/reports/[CPA.pdf](https://github.com/yongcale/adversarial/blob/master/etc/report/Capstone%20%20CPA.pdf) <br>
 mid-project [update PPT](https://docs.google.com/document/d/1TQSCHRkNbKEyEXy47DUizdd5kNxNmqapIAxt5I4Ckf0/edit)<br>
