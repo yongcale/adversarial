@@ -68,10 +68,12 @@
 
 ### SDG - Stochastic Gradient Descent
 * [各种梯度优化算法介绍（SGD Loss剧烈波动）](http://blog.csdn.net/chenzhi1992/article/details/52850759)
+
 ##GAN with NLP
 *https://arxiv.org/abs/1711.04903
 *https://arxiv.org/abs/1606.01614
 *https://arxiv.org/abs/1711.10122
 
-## E-commerce
-*https://link.springer.com/content/pdf/10.1007%2F978-3-319-07293-7.pdf
+## visual Tracking with GAN
+https://arxiv.org/pdf/1711.06564.pdf
+
