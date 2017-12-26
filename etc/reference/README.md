@@ -33,13 +33,6 @@
 * [Breaking Linear Classifiers on ImageNet](http://karpathy.github.io/2015/03/30/breaking-convnets/) 
 ---
 
-##  GAN:  (https://github.com/hindupuravinash/the-gan-zoo)
-* [AE-GAN: adversarial eliminating with GAN](https://arxiv.org/abs/1707.05474)
-* [Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN](https://arxiv.org/abs/1702.05983v1)
-* [Generative Adversarial Networks](https://arxiv.org/abs/1406.266)
-
----
-
 
 ## Ongoing Kaggle competition:
 * https://www.kaggle.com/c/nips-2017-non-targeted-adversarial-attack
@@ -69,11 +62,20 @@
 ### SDG - Stochastic Gradient Descent
 * [各种梯度优化算法介绍（SGD Loss剧烈波动）](http://blog.csdn.net/chenzhi1992/article/details/52850759)
 
-##GAN with NLP
-*https://arxiv.org/abs/1711.04903
-*https://arxiv.org/abs/1606.01614
-*https://arxiv.org/abs/1711.10122
 
-## visual Tracking with GAN
+##  GAN:  (https://github.com/hindupuravinash/the-gan-zoo)
+* [AE-GAN: adversarial eliminating with GAN](https://arxiv.org/abs/1707.05474)
+* [Generating Adversarial Malware Examples for Black-Box Attacks Based on GAN](https://arxiv.org/abs/1702.05983v1)
+* [Generative Adversarial Networks](https://arxiv.org/abs/1406.266)
+
+### GAN with NLP
+* https://arxiv.org/abs/1711.04903
+* https://arxiv.org/abs/1606.01614
+* https://arxiv.org/abs/1711.10122
+
+### visual Tracking with GAN
 https://arxiv.org/pdf/1711.06564.pdf
+
+---
+
 
