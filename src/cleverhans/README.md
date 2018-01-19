@@ -25,4 +25,4 @@ python3 attach_gradient_ascent_noise.py
         --image_height=299 
         --batch_size=1
 ```
-Note: currently we just support batch_size 1
+
