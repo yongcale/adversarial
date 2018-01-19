@@ -11,7 +11,7 @@ To run the attack:
        sh $ROOT_DIR/etc/download_data.sh  <br>
        (Note: ROOT_DIR is the root directory of your github repository, for example, "/home/ywu118/adversarial/")
 
-2) then perform fgsm attack: <br>
+2) then perform the attack: <br>
 
 ```
 cd $ROOT_DIR/src/cleverhans/attack 
