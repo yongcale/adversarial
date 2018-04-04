@@ -33,6 +33,7 @@ sh $ROOT_DIR/etc/download_data.sh
 
 - **1). Perform "Gradient Ascent with Noise" attack:** 
 
+
 ```
 cd $ROOT_DIR/src/cleverhans/attack 
 python3 attach_gradient_ascent_noise.py  \
@@ -45,6 +46,7 @@ python3 attach_gradient_ascent_noise.py  \
         --image_height=299 \
         --batch_size=1
 ```
+
 Note: currently we just support batch_size 1, will support batch operation latter.
 
 - **2). Get perturbation rate:** 
