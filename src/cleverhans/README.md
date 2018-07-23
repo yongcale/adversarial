@@ -1,7 +1,5 @@
 
-### Note: codes under adversarial/src/cleverhans are from the following sources,
-###       more details please directly access them
-
+ more details please directly access:
 - https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks.py
 - https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks_tf.py
 
