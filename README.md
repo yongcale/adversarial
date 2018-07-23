@@ -4,7 +4,7 @@
 Created by Ran Liu, Zheng Qu, Yong Wu
 ```
 
-### Statement: we would like to restate that we utilized several utils, gradient computation, class architecture from [cleverhans](https://github.com/tensorflow/cleverhans) community, we really appreciate the great contribution of the community
+we utilized several utils, gradient computation, class architecture from [cleverhans](https://github.com/tensorflow/cleverhans) community.
 
 ## 1. Get Started
 
