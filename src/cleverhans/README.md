@@ -1,8 +1,4 @@
 
- more details please directly access:
-- https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks.py
-- https://github.com/tensorflow/cleverhans/blob/master/cleverhans/attacks_tf.py
-
 To run the attack:
 
 1) download related dataset:  <br>
